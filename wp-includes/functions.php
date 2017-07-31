@@ -1621,8 +1621,6 @@ function wp_mkdir_p( $target ) {
 		$dir_perms = 0777;
 	}
 
-	echo $target;
-	echo $dir_perms;
 	if ( @mkdir( $target, $dir_perms, true ) ) {
 
 		/*
