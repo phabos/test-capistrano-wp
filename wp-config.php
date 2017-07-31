@@ -17,11 +17,8 @@
  *
  * @package WordPress
  */
-$env = getenv('WEBSITE_ENV');
-if( empty( $env ) )
-    die( 'Please set up environnement variable so wa can load proper config' );
 
-define('SITE_CONFIG_PATH', ABSPATH . 'wp-config/' . $env . '/');
+define('SITE_CONFIG_PATH', ABSPATH . 'wp-config/');
 
 require_once(SITE_CONFIG_PATH . 'wp-options.php');
 require_once(SITE_CONFIG_PATH . 'db-settings.php');
